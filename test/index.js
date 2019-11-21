@@ -1,10 +1,10 @@
 const fs = require('fs')
 const SVGParser = require('../lib/index.js')
 
-const parse = SVGParser.parse('./test/test.svg', {
+const parse = SVGParser.parse('./test/scatter-symbol.svg', {
   plugins: [
     {
-      convertUseToGroup: true, // at first
+      convertUseToGroup: false, // at first
     },
     {
       convertShapeToPath: true,
@@ -19,7 +19,6 @@ const parse = SVGParser.parse('./test/test.svg', {
       viewBoxTransform: true, // at last
     },
   ],
-  size: 1000,
 })
 
 const result = parse.toSimpleSvg()

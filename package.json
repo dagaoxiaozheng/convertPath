@@ -11,7 +11,7 @@
     "minor": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as minor && git push --follow-tags origin master && npm publish",
     "patch": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as patch && git push --follow-tags origin master && npm publish"
   },
-  "author": "",
+  "author": "gaoyongli <gaoyongli@intra.nsfocus.com>",
   "license": "ISC",
   "husky": {
     "hooks": {
@@ -46,10 +46,7 @@
     "prettier": "^1.16.4",
     "standard-version": "^7.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/pfan123/convertpath.git"
-  },
+  "repository": "git+ssh://git@github.com/pfan123/convertpath.git",
   "keywords": [
     "convert path",
     "path",
